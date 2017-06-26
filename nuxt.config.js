@@ -1,4 +1,7 @@
 module.exports = {
+  modules: [
+    '@nuxtjs/font-awesome'
+  ],
   css: [
     'normalize.css/normalize.css'
   ],

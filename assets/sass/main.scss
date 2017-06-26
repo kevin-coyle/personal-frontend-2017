@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Raleway');
-html {
-  font-family: $mainFont;
-  font-weight: normal;
+@import "~bulma/bulma";
+*, *:before, *:after {
+  box-sizing: border-box;
 }
+    #mainHeading {
+      nav {
+        ul {
+          display:flex;
+          justify-content: flex-end;
+        li:not(:last-child) {
+          margin-right: 1rem;
+        }
+        }
+      }
+        .social-menu {
+            ul {
+              display: flex;
+              margin-top: 1rem;
+                @include tablet {
+                  justify-content: flex-end;
+                }
+            li {
+                &:not(:last-child) {
+                   margin-right: 1rem;
+                 }
+            }
+        }
+            i {
+              font-size: 1.5rem;
+              transition: 0.5s color;
+                &:hover {
+                   color: $tertiary;
+                 }
+                @include tablet {
+                  font-size: 3rem;
+                }
+            }
+        }
+    }

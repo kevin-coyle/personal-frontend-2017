@@ -1,5 +1,15 @@
 //Typography
-$mainFont: 'Raleway', sans-serif;
-body {
-  background-color: pink !important;
+
+$family-primary: 'Raleway';
+$font-serif: 'Fjalla One';
+
+
+h1.title, h2.title, h3.title {
+  font-family: $font-serif;
 }
+
+
+//Colours
+$primary: #676767;
+$tertiary: #f4645f;
+$secondary: #82d29d;

@@ -1,0 +1,53 @@
+<template>
+  <section class="section">
+    <div class="container">
+      <header id="mainHeading">
+        <div class="columns">
+          <div class="column">
+            <Logo></Logo>
+          </div>
+          <div class="column">
+            <nav id="mainNav">
+              <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/cv">CV</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="social-menu">
+              <ul>
+                <li>
+                  <a href="https://github.com/kevin-coyle">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/kevincoyle">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://drupal.org/u/kevla">
+                    <i class="fa fa-drupal" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </section>
+</template>
+<style lang="scss" scoped>
+
+</style>
+<script>
+  import Logo from '~components/Logo.vue'
+
+  export default {
+    components: {
+      Logo
+    }
+  }
+</script>

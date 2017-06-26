@@ -1,15 +1,16 @@
 <template>
-    <Logo></Logo>
+    <Heading/>
+
 </template>
 
 <script>
-import Logo from '~components/Logo.vue'
+    import Heading from '~components/Heading.vue'
 
-export default {
-  components: {
-    Logo
-  }
-}
+    export default {
+      components: {
+        Heading
+      }
+    }
 </script>
 
 <style>

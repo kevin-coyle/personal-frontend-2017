@@ -5,6 +5,9 @@
   "author": "Kevin Coyle <kevin.coyle@drutek.co.uk>",
   "private": true,
   "dependencies": {
+    "@nuxtjs/font-awesome": "^1.0.1",
+    "bulma": "^0.4.2",
+    "font-awesome": "^4.7.0",
     "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",
     "nuxt": "latest",
