@@ -13,7 +13,9 @@
               <ul>
                 <li>
                   <nuxt-link to="/about">About Me</nuxt-link></li>
-                <li><a href="/cv">CV</a></li>
+                <li>
+                  <nuxt-link to="/cv">CV</nuxt-link>
+                </li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
             </nav>
