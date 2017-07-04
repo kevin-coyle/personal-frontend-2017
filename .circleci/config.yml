@@ -10,6 +10,9 @@ jobs:
           name: install_rsync
           command: sudo apt-get update && sudo apt-get install -y rsync
       - run:
+          name: disable_strict_host_checking
+          command: echo "StrictHostKeyChecking=no" >> ~/.ssh/config
+      - run:
           name: install-node-deps
           command: npm install
       - run:
