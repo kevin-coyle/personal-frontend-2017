@@ -4,7 +4,9 @@
       <header id="mainHeading">
         <div class="columns">
           <div class="column">
-            <Logo></Logo>
+            <nuxt-link to="/">
+              <Logo></Logo>
+            </nuxt-link>
           </div>
           <div class="column">
             <nav id="mainNav">
