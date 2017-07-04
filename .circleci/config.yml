@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/personal_frontend
+    docker:
+      - image: circleci/node:7
+    steps:
+      - checkout
+      - run:
+          name: install_rsync
+          command: sudo apt-get update && sudo apt-get install -y rsync
+      - run:
+          name: disable_strict_host_checking
+          command: echo "StrictHostKeyChecking=no" >> ~/.ssh/config
+      - run:
+          name: install-node-deps
+          command: npm install
+      - run:
+          name: generate-static-site
+          command: npm run generate
+      - deploy:
+          name: deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              rsync -avzh dist/ s221267.gridserver.com@s221267.gridserver.com:domains/beta.webdev.pro/html/
+            fi
