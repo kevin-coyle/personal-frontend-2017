@@ -12,7 +12,7 @@
             <nav id="mainNav">
               <ul>
                 <li>
-                  <nuxt-link to="/about">About</nuxt-link></li>
+                  <nuxt-link to="/about">About Me</nuxt-link></li>
                 <li><a href="/cv">CV</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
