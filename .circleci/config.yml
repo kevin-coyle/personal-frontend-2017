@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/
+    working_directory: ~/personal_frontend
     docker:
       - image: circleci/node:7
     steps:
