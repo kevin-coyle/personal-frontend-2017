@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-					name: install-node-deps
-          command: npm install
-      - run: 
+          name: install-node-deps
+          commmand: npm install
+      - run:
           name: generate-static-site
           command: npm run generate
