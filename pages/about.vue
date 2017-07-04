@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="columns">
                     <div class="column">
-                        <section class="about-me">
+                        <section class="about-me section">
                             <article>
                                 <h1 class="title is-2">
                                     All about me
@@ -29,7 +29,7 @@
                                         I was mainly brought up in a Yorkshire seaside town called Bridlington on the east coast of England. Whilst there I discovered a love of science and music. So I taught myself how to play the guitar, joined a band and then studied towards A levels in Maths, Music and Physics.
                                     </p>
                                     <p>
-                                        After passing my A levels I went on to Manchester University to study Physics with Technological Physics(basically physics with more electronics and programming).
+                                        After passing my A levels I went on to Manchester University to study Physics with Technological Physics (basically physics with more electronics and programming).
                                     </p>
                                     <p>
                                         Following on from university I set up a web design consultancy with a friend of mine who is on the televison <em>(I'm not saying who)</em>. This was my first real exposure to business and I learnt a great deal. I gained a thirst for independence and that has stayed with me to this day.

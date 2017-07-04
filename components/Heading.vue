@@ -1,8 +1,8 @@
 <template>
-  <section class="section">
     <div class="container">
       <header id="mainHeading">
-        <div class="columns">
+          <section class="section">
+                    <div class="columns">
           <div class="column">
             <nuxt-link to="/">
               <Logo></Logo>
@@ -38,9 +38,10 @@
             </div>
           </div>
         </div>
+          </section>
+
       </header>
     </div>
-  </section>
 </template>
 <style lang="scss" scoped>
 
