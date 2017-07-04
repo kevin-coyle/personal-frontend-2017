@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/
+    docker:
+      - image: circleci/node:7
+    steps:
+      - checkout
+      - run:
+					name: install-node-deps
+          command: npm install
+      - run: 
+          name: generate-static-site
+          command: npm run generate
