@@ -22,5 +22,5 @@ jobs:
           name: deploy
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              rsync -avzh -o StrictHostKeyChecking=no dist/ s221267.gridserver.com@s221267.gridserver.com:domains/beta.webdev.pro/html/
+              rsync -avzh dist/ s221267.gridserver.com@s221267.gridserver.com:domains/beta.webdev.pro/html/
             fi
