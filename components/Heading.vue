@@ -16,6 +16,9 @@
                 <li>
                   <nuxt-link to="/cv">CV</nuxt-link>
                 </li>
+                <li>
+                  <nuxt-link to="/blog">Blog</nuxt-link>
+                </li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
             </nav>

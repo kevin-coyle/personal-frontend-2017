@@ -6,7 +6,7 @@
                 <div class="columns">
                     <div class="column">
                         <section class="section profile">
-                            <h1 class="title is-3">Profile</h1>
+                            <h1 class="title is-2">Profile</h1>
                             <div class="content">
                                 <p>I am an experienced Acquia certified developer with over 10 years experience in PHP and Drupal. I have an eclectic range of skills but currently my main focus is on <strong>PHP</strong>, <strong>Laravel</strong> and <strong>Drupal</strong>. I currently am quite involved in DevOPs. I am a great team player but I also possess the ability to work well independently. I have been interested in IT and programming since childhood and it is something that I am truly passionate about. Linux and OS X are my primary operating systems of choice.</p>
                             </div>
