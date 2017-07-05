@@ -2,6 +2,9 @@ module.exports = {
   modules: [
     '@nuxtjs/font-awesome'
   ],
+  plugins: [
+    { src: '~plugins/ga.js', ssr: false}
+  ],
   css: [
     'normalize.css/normalize.css'
   ],
