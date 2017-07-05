@@ -1,3 +1,4 @@
+const axios = require('axios')
 module.exports = {
   modules: [
     '@nuxtjs/font-awesome'
@@ -44,5 +45,15 @@ module.exports = {
       }
     },
     extractCSS: true
+  },
+  generate: {
+    routes: function() {
+      return axios.get("https://backend.webdev.pro/jsonapi/node/blog")
+        .then((res) => {
+          return res.data.data.map((blog) => {
+            return '/blog/' + blog.id
+          })
+        })
+    }
   }
 }
