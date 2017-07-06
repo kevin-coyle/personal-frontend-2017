@@ -10,11 +10,12 @@
           <ul>
             <li v-for="post in posts">
             <nuxt-link :to="{ name: 'blog-id', params: { id: post.attributes.field_fieldablepath.replace('/blog/','') } }">
-              <article>
+              <article class="blog-listing__teaser blog-teaser">
               <header>
                 <h1 class="title is-4">
                   {{post.attributes.title}}
                 </h1>
+                <time class="dateline">{{post.attributes.created | moment}}</time>
               </header>
               {{post.attributes.body.summary}}
               </article>
@@ -33,9 +34,15 @@
 <script>
   import Heading from '~components/Heading.vue'
   import axios from 'axios'
+  import moment from 'moment'
   export default {
     components: {
       Heading
+    },
+    filters: {
+      moment: function (date) {
+        return moment.unix(date).format('Do MMMM YYYY')
+      }
     },
     asyncData ({req, params}) {
       return axios.get('https://backend.webdev.pro/jsonapi/node/blog')

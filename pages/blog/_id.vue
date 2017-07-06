@@ -6,11 +6,12 @@
       <div class="columns">
         <div class="column">
           <section class="blog-content section">
-            <article>
-              <header>
+            <article class="blog-content">
+              <header class="blog-content__header">
                 <h1 class="title">
                   {{post.attributes.title}}
                 </h1>
+                <time class="dateline">{{post.attributes.created | moment}}</time>
               </header>
               <div class="content" v-html="post.attributes.body.value">
               </div>
@@ -27,10 +28,16 @@
 <script>
 import Heading from '~components/Heading.vue'
 import axios from 'axios'
+import moment from 'moment'
 
 export default {
   components: {
     Heading
+  },
+  filters: {
+    moment: function (date) {
+      return moment.unix(date).format('Do MMMM YYYY')
+    }
   },
   asyncData ({req, params}) {
     return axios.get(`https://backend.webdev.pro/jsonapi/node/blog?filter[field_fieldablepath][value]=/blog/${params.id}`)

@@ -87,3 +87,13 @@
      text-align: center;
    }
  }
+.dateline {
+  font-weight: bold;
+}
+.blog-content__header {
+  border-bottom: 1px dashed #cccccc;
+  margin-bottom: 1rem;
+  h1 {
+    margin-bottom: 1rem;
+  }
+}
