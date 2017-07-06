@@ -51,7 +51,7 @@ module.exports = {
       return axios.get("https://backend.webdev.pro/jsonapi/node/blog")
         .then((res) => {
           return res.data.data.map((blog) => {
-            return '/blog/' + blog.id
+            return '/blog/' + blog.attributes.field_fieldablepath.replace('/blog/', '')
           })
         })
     }
