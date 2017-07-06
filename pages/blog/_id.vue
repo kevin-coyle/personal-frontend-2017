@@ -33,10 +33,11 @@ export default {
     Heading
   },
   asyncData ({req, params}) {
-    return axios.get(`https://backend.webdev.pro/jsonapi/node/blog/${params.id}`)
+    return axios.get(`https://backend.webdev.pro/jsonapi/node/blog?filter[field_fieldablepath][value]=/blog/${params.id}`)
         .then((res) => {
+          console.log(res)
           return {
-            post: res.data.data
+            post: res.data.data[0]
           }
         })
   }

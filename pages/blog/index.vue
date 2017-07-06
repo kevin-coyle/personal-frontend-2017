@@ -9,7 +9,7 @@
           <h1 class="title is-2">Blog</h1>
           <ul>
             <li v-for="post in posts">
-            <nuxt-link :to="{ name: 'blog-id', params: { id: post.id } }">
+            <nuxt-link :to="{ name: 'blog-id', params: { id: post.attributes.field_fieldablepath.replace('/blog/','') } }">
               <article>
               <header>
                 <h1 class="title is-4">
