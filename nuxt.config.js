@@ -21,6 +21,9 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {src: 'https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js'}
     ]
   },
   /*
