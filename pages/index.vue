@@ -69,6 +69,7 @@
 <style>
 .is-hero {
   background-image: url('/images/home_banner.jpg');
+  background-attachment: fixed;
   background-position: center center;
   background-size: cover;
 }
