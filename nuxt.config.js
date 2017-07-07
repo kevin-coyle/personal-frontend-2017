@@ -20,7 +20,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Kevin Coyle - Freelance Development Consultant in the North West of England Specialising in Laravel, Drupal and NodeJS' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ],
     script: [
       {src: 'https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js'}
