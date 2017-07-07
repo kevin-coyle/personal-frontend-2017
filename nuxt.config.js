@@ -51,7 +51,7 @@ module.exports = {
   },
   generate: {
     routes: function() {
-      return axios.get("https://data.webdev.pro/node/blog")
+      return axios.get("http://data.webdev.pro/node/blog")
         .then((res) => {
           return res.data.data.map((blog) => {
             return '/blog/' + blog.attributes.field_path.replace('/blog/', '')

@@ -85,7 +85,7 @@
         Heading
       },
       asyncData ({req, params}) {
-        return axios.get('https://data.webdev.pro/node/blog', {
+        return axios.get('http://data.webdev.pro/node/blog', {
           params: {
             'page[limit]': '2'
           }

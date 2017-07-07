@@ -40,7 +40,7 @@ export default {
     }
   },
   asyncData ({req, params}) {
-    return axios.get(`https://data.webdev.pro/node/blog?filter[field_path][value]=/blog/${params.id}`)
+    return axios.get(`http://data.webdev.pro/node/blog?filter[field_path][value]=/blog/${params.id}`)
         .then((res) => {
           return {
             post: res.data.data[0]
