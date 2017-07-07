@@ -18,9 +18,9 @@
                 <div class="container">
                     <div class="columns">
                         <div class="column">
-                            <h2 class="title is-3">
+                            <h1 class="title is-3">
                                 I currently use:
-                            </h2>
+                            </h1>
                             <ul>
                                 <li>
                                     <article class="i-use__icon">
@@ -57,21 +57,15 @@
                   <div class="column">
                     <h1 class="title is-3">Recent Ramblings</h1>
                     <ul class="columns">
-                      <li class="column">
-                        <article>
-                          <header>
-                            <h1 class="title is-5">Blog Title</h1>
-                          </header>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nesciunt blanditiis, sed ullam beatae earum? Harum corrupti architecto quos deserunt consequatur quis enim eveniet fugit ullam. Recusandae molestiae, aut reiciendis!</p>
-                        </article>
-                      </li>
-                      <li class="column">
-                        <article>
-                          <header>
-                            <h1 class="title is-5">Blog Title</h1>
-                          </header>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nesciunt blanditiis, sed ullam beatae earum? Harum corrupti architecto quos deserunt consequatur quis enim eveniet fugit ullam. Recusandae molestiae, aut reiciendis!</p>
-                        </article>
+                      <li v-for="(post,index) in posts" class="column">
+                      <nuxt-link :to="{ name: 'blog-id', params: { id: post.attributes.field_fieldablepath.replace('/blog/','') } }">
+                          <article>
+                            <header>
+                              <h1 class="title is-5">{{post.attributes.title}}</h1>
+                            </header>
+                            <p>{{post.attributes.body.summary}}</p>
+                          </article>
+                        </nuxt-link>
                       </li>
                     </ul>
                   </div>
@@ -84,20 +78,39 @@
 
 <script>
     import Heading from '~components/Heading.vue'
+    import axios from 'axios'
 
     export default {
       components: {
         Heading
+      },
+      asyncData ({req, params}) {
+        return axios.get('https://backend.webdev.pro/jsonapi/node/blog', {
+          params: {
+            'page[limit]': '2'
+          }
+        })
+            .then((res) => {
+              return {
+                posts: res.data.data
+              }
+            })
       }
+
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .is-hero {
   background-image: url('/images/home_banner.jpg');
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+}
+.what-i-use {
+  h1 {
+    margin-top: 0;
+  }
 }
 .section {
   &.dark {

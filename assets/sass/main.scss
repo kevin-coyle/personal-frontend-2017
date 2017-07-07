@@ -82,9 +82,11 @@
      height: 10rem;
      width: auto;
    }
-   h2 {
-     margin-top: 2rem;
+   h1, h2 {
      text-align: center;
+   }
+   h2 {
+    margin-top: 2rem;
    }
  }
 .dateline {
