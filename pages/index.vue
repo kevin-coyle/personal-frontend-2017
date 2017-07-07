@@ -67,4 +67,9 @@
 </script>
 
 <style>
+.is-hero {
+  background-image: url('/images/home_banner.jpg');
+  background-position: center center;
+  background-size: cover;
+}
 </style>
