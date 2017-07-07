@@ -4,7 +4,8 @@ module.exports = {
     '@nuxtjs/font-awesome'
   ],
   plugins: [
-    { src: '~plugins/ga.js', ssr: false}
+    { src: '~plugins/ga.js', ssr: false},
+    { src: '~plugins/jotform.js', ssr: false}
   ],
   css: [
     'normalize.css/normalize.css'
