@@ -58,7 +58,7 @@
                     <h1 class="title is-3">Recent Ramblings</h1>
                     <ul class="columns">
                       <li v-for="(post,index) in posts" class="column">
-                      <nuxt-link :to="{ name: 'blog-id', params: { id: post.attributes.field_fieldablepath.replace('/blog/','') } }">
+                      <nuxt-link :to="{ name: 'blog-id', params: { id: post.attributes.field_path.replace('/blog/','') } }">
                           <article>
                             <header>
                               <h1 class="title is-5">{{post.attributes.title}}</h1>
@@ -85,7 +85,7 @@
         Heading
       },
       asyncData ({req, params}) {
-        return axios.get('https://backend.webdev.pro/jsonapi/node/blog', {
+        return axios.get('https://data.webdev.pro/node/blog', {
           params: {
             'page[limit]': '2'
           }

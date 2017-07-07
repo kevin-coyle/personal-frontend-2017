@@ -51,10 +51,10 @@ module.exports = {
   },
   generate: {
     routes: function() {
-      return axios.get("https://backend.webdev.pro/jsonapi/node/blog")
+      return axios.get("https://data.webdev.pro/node/blog")
         .then((res) => {
           return res.data.data.map((blog) => {
-            return '/blog/' + blog.attributes.field_fieldablepath.replace('/blog/', '')
+            return '/blog/' + blog.attributes.field_path.replace('/blog/', '')
           })
         })
     }
