@@ -51,9 +51,35 @@
                     </div>
                 </div>
             </section>
+            <section class="section dark recent-blogs">
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <h1 class="title is-3">Recent Ramblings</h1>
+                    <ul class="columns">
+                      <li class="column">
+                        <article>
+                          <header>
+                            <h1 class="title is-5">Blog Title</h1>
+                          </header>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nesciunt blanditiis, sed ullam beatae earum? Harum corrupti architecto quos deserunt consequatur quis enim eveniet fugit ullam. Recusandae molestiae, aut reiciendis!</p>
+                        </article>
+                      </li>
+                      <li class="column">
+                        <article>
+                          <header>
+                            <h1 class="title is-5">Blog Title</h1>
+                          </header>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nesciunt blanditiis, sed ullam beatae earum? Harum corrupti architecto quos deserunt consequatur quis enim eveniet fugit ullam. Recusandae molestiae, aut reiciendis!</p>
+                        </article>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
         </main>
     </div>
-
 </template>
 
 <script>
@@ -66,11 +92,20 @@
     }
 </script>
 
-<style>
+<style lang="scss">
 .is-hero {
   background-image: url('/images/home_banner.jpg');
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
 }
+.section {
+  &.dark {
+    background: #2e3440;
+    h1, h2, h3, h4, h5, p {
+      color: #ffffff;
+    }
+  }
+}
+
 </style>

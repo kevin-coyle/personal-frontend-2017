@@ -2,10 +2,11 @@
 
 $family-primary: 'Raleway';
 $font-serif: 'Fjalla One';
-
+$text: #2e3440;
 
 h1.title, h2.title, h3.title {
   font-family: $font-serif;
+  color: $text;
 }
 
 
