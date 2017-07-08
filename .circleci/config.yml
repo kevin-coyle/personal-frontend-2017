@@ -22,5 +22,5 @@ jobs:
           name: deploy
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              rsync -avzh dist/ root@webdev.pro:/opt/code/personal
+              rsync -avzh dist/ root@139.162.210.194:/opt/code/personal
             fi
