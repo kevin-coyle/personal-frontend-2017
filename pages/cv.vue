@@ -35,7 +35,7 @@
                                             <h1 class="title is-5">TalkTalk</h1>
                                             <div class="experience__item__dates">
                                                 <span><strong>Start Date:</strong> Sep 2012</span>
-                                                <span><strong>End Date:</strong>Dec 2014</span>                                                </div>
+                                                <span><strong>End Date:</strong> Dec 2013</span>                                                </div>
                                         </header>
                                         <div class="content">
                                             Originally starting as a short term contractor I was taken on a permanent basis. I created and led the Drupal team at TalkTalk Technology, creating high traffic solutions to be used both in house and externally. In this role I hired and trained staff, implemented process and liased across the large business to create cost-effective and viable business application solutions using open source technologies.
