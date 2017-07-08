@@ -22,7 +22,7 @@
                                             <h1 class="title is-5">Ashfield Healthcare</h1>
                                             <div class="experience__item__dates">
                                                 <span><strong>Start Date:</strong> Nov 2013</span>
-                                                <span><strong>End Date:</strong>Jun 2017</span>                                                </div>
+                                                <span><strong>End Date:</strong> Jun 2017</span>                                                </div>
                                         </header>
                                         <div class="content">
                                             Initially brought in for a six week contract I was tasked with creating the backend for a e-commerce healthcare website. After completing that I moved on to lead the development on numerous websites utilising various toolsets such as Drupal, Wordpress, Laravel, NodeJS and even .NET (Sitefinity). In addition to development I also set up their linux infrastructure and implemented version control and continuous integration using both Jenkins and later Bitbucket pipelines.
@@ -61,7 +61,7 @@
                                             <h1 class="title is-5">CoyleDesign</h1>
                                             <div class="experience__item__dates">
                                                 <span><strong>Start Date:</strong> Feb 2010</span>
-                                                <span><strong>End Date:</strong>Jun 2012</span>                                                </div>
+                                                <span><strong>End Date:</strong> Jun 2012</span>                                                </div>
                                         </header>
                                         <div class="content">
                                             <p>Straight after leaving university and in the height of the global financial crisis I set up CoyleDesign. Starting with a small client base initially it soon grew into a thriving company that was providing services to celebrities and people in politics.</p><p>As managing director I was responsible completely for the welfare and success of the business. In addition to doing the initial development work I was also tasked with marketing and promotion for the business to ensure that it was profitable</p>
