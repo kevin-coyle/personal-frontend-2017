@@ -99,7 +99,7 @@
                                         <h1 class="title is-5">Manchester University</h1>
                                         <ul>
                                             <li>
-                                                Physics with Technological Physics
+                                                BSc. Physics with Technological Physics
                                             </li>
                                         </ul>
                                     </article>
