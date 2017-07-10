@@ -64,7 +64,7 @@
                                                 <span><strong>End Date:</strong> Jun 2012</span>                                                </div>
                                         </header>
                                         <div class="content">
-                                            <p>Straight after leaving university and in the height of the global financial crisis I set up CoyleDesign. Starting with a small client base initially it soon grew into a thriving company that was providing services to celebrities and people in politics.</p><p>As managing director I was responsible completely for the welfare and success of the business. In addition to doing the initial development work I was also tasked with marketing and promotion for the business to ensure that it was profitable</p>
+                                            <p>Straight after leaving university and in the height of the global financial crisis I set up CoyleDesign. Starting with a small client base initially it soon grew into a thriving company that was providing services to celebrities and people in politics.</p><p>As managing director I was responsible completely for the welfare and success of the business. In addition to doing the initial development work I was also tasked with marketing and promotion for the business to ensure that it was profitable.</p>
                                         </div>
                                     </article>
                                 </li>
