@@ -99,7 +99,7 @@
                                         <h1 class="title is-5">Manchester University</h1>
                                         <ul>
                                             <li>
-                                                BSc. Physics with Technological Physics
+                                                Physics with Technological Physics
                                             </li>
                                         </ul>
                                     </article>
@@ -162,6 +162,11 @@
 </script>
 <style lang="scss" scoped>
     .page-cv {
+        .education {
+            article {
+                margin-bottom: 2rem;
+            }
+        }
         .experience {
             &__item {
                 margin: {
